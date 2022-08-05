@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>HTMLTags</title>
 </head>
 
 <body>
     <!-- Embed | -->
 
-    <embed type="video/webm" src="movie.mp4" width="400" height="300">
-    <!-- fieldset -->
+    <embed type="video/webm" src="tag.1.mp4" width="300" height="600">
+
+    <!-- fieldset | form | inbut | label |legend -->
+
     <form action="/action_page.php">
         <fieldset>
             <legend>Personalia:</legend>
@@ -27,19 +30,23 @@
             <input type="submit" value="Submit">
         </fieldset>
     </form>
-    <!-- font|its not in html5 works-css -->
+    <figure>
+        <img src="tag.2.jpg" alt="Internet illa broo!" style="width:70%">
+        <figcaption>Adopt the pace of Nature</figcaption>
+    </figure>
+
+    <!-- font|its not in html 5 works-css -->
 
     <!-- The footer element -->
 
     <footer>
-        <p>Author: Hege Refsnes<br>
-            <a href="mailto:hege@example.com">hege@example.com</a>
+        <p>Author: Mohamed Aziz;<br>
+            <a href="mailto:hege@example.com">erazizeee@gmail.com</a>
         </p>
     </footer>
-
-
-
-
+    <!-- frame -->
+    <iframe src="https://www.starwars.com" title="star wars website">
+    </iframe>
 
     <!-- heading -->
     <h1>HEADING</h1>
@@ -48,9 +55,122 @@
     <h4>HEADING</h4>
     <h5>HEADING</h5>
     <h6>HEADING</h6>
-    <h7>HEADING</h7>
-    <h8>HEADING</h8>
-    
+
+    <!-- header -->
+    <header>
+        <h2>This is heading </h2>
+        <p>Posted by:Mohamed Aziz;</p>
+    </header>
+
+    <h3>The Main Languages of the Web</h3>
+
+    <hr>
+    <p>HTML is the standard markup language for creating Web pages.<br>HTML describes the structure of a Web page, and
+        consists of<br>a series of elements.HTML elements tell the browser how to display the content.</p>
+    </hr>
+    <!-- <i> -->
+    <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+    The content inside is typically displayed in italic.
+    <!-- image -->
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+    <!-- ins -->
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+    <!-- kbd -->
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+    <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+
+    <!-- list | ol -->
+    <p>ordered list:</p>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <!-- link -->
+    <h4>Hello World!</h4>
+
+    <h5>I am formatted with a linked style sheet.</h5>
+
+    <!-- Main -->
+    <main>
+        <h1>Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular
+                web browser today!</p>
+        </article>
+
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most
+                popular web browser since January, 2018.</p>
+        </article>
+    </main>
+    <!-- map -->
+    <img src="tag.2.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+    <!-- Mark -->
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+    <!-- meter -->
+    <label for="disk_A">Disk usage C:</label>
+    <meter id="disk_A" value="5" min="0" max="10">5 out of 10</meter><br>
+
+    <label for="disk_B">Disk usage D:</label>
+    <meter id="disk_B" value="0.6">50%</meter><br><br>
+
+    <!-- navigation -->
+    <nav>
+        <a href="/html/">HTML</a>|
+        <a href="/css/">CSS</a>|
+        <a href="/js/">JavaScript</a>|<br><br>
+    </nav>
+
+    <script>
+        document.write("Hello World!")
+    </script>
+    <noscript>
+        document.write("bye!")
+    </noscript>
+
+    <!-- option | optgroup -->
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select><br><br>
+
+    <!-- object | param -->
+    <object data="tag.3.mp3">
+        <param name="autoplay" value="true">
+        </object>
+
+        <!-- picture -->
+        <picture>
+            <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+            <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+            <img src="tag.2.jpg" alt="" style="width:auto;">
+          </picture>
+
+
+
+
 </body>
 
 </html>
